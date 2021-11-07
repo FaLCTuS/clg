@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vardhaman College of Engineering</title>
+    <link rel="stylesheet" href="indexpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="#">Vardhaman College of Engineering</a></div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">Features</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="#">Drop Menu 1</a></li>
+                            <li><a href="#">Drop Menu 2</a></li>
+                            <li><a href="#">Drop Menu 3</a></li>
+                            <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Services</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Services</label>
+                        <ul>
+                            <li><a href="#">Drop Menu 1</a></li>
+                            <li><a href="#">Drop Menu 2</a></li>
+                            <li><a href="#">Drop Menu 3</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">More Items</a>
+                                <input type="checkbox" id="show-items">
+                                <label for="show-items">More Items</label>
+                                <ul>
+                                    <li><a href="#">Sub Menu 1</a></li>
+                                    <li><a href="#">Sub Menu 2</a></li>
+                                    <li><a href="#">Sub Menu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
+    <div class="dummy-text">
+        <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
+    </div>
+
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="pho/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="pho/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="pho/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="pho/2.jpg" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <div class="intro">
+        <h2>About Vardhaman</h2>
+        <p>Vardhaman College of Engineering (VCE) was established in the year 1999 by Vardhaman Educational Society, Hyderabad. It is a UGC Autonomous college, approved by AICTE, and is permanently affiliated to Jawaharlal Nehru Technological University
+            (JNTU), Hyderabad. We offer undergraduate B.Tech programmes in CSE, CSE (AI&ML), AI&ML, AI&DS, IT, ECE, EEE, ME and CE; postgraduate M.Tech programmes with specialisation in DECS, PEED, CSE, SE, and ED; MBA programme; and doctoral programmes
+            in CSE, ECE and ME.</p>
+        <p>The college is accredited by NAAC at A++ grade with a CGPA of 3.58 on a scale of 4. Five of its UG engineering programmes – B. Tech ECE, EEE, CSE, ME, and IT are accredited by the National Board of Accreditation (NBA), New Delhi under the Tier-1
+            category.
+        </p>
+        <p>VCE is the most sought-after institute to make the dreams fulfilled for many aspiring engineers. Our major strength lies in imparting quality education to the global standards and envisages to address various societal needs.
+        </p>
+    </div>
+    <div class="whyvardhaman">
+        div
+    </div>
+
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 6000);
+    </script>
+
+    <div class="highlights">
+        <div class="hlcont">
+            <img src="pho/2.jpg" alt="">
+            <h3>Academic Innovations</h3>
+            <p>Academic Innovation is the academic support division at Vardhaman College of Engineering (VCEH) that brings together experts..</p>
+            <a href="">Read More</a>
+        </div>
+        <div class="hlcont">
+            <img src="pho/1.jpg" alt="">
+            <h3>Incubation Highlights</h3>
+            <p>CIE, VARDHAMAN COLLEGE OF ENGINEERING wishes to facilitate the creation of ideas and inventions that benefit society.</p>
+            <a href="">Read More</a>
+        </div>
+        <div class="hlcont">
+            <img src="pho/2.jpg" alt="">
+            <h3>Research Highlights</h3>
+            <p>Vardhaman College has been a leader in undergraduate research for many years. We provide our students with opportunities...</p>
+            <a href="">Read More</a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
